@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+Disallow: /cart.html
+Disallow: /checkout.html
+Disallow: /assets/js/
+Disallow: /*?*
+
+User-agent: Yandex
+Allow: /
+Disallow: /cart.html
+Disallow: /checkout.html
+Disallow: /*?*
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&yclid&gclid&fbclid /
+
+User-agent: YandexImages
+Allow: /assets/img/
+
+User-agent: YandexMarket
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+Disallow: /cart.html
+Disallow: /checkout.html
+
+# Замените example.ru на ваш реальный домен
+Host: example.ru
+Sitemap: https://example.ru/sitemap.xml

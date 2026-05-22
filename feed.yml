@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    YML-фид для Яндекс.Товаров и Яндекс.Маркета.
+    Замените example.ru на ваш домен, заполните реальные товары и загрузите фид
+    в Яндекс.Вебмастер → раздел «Товары» → «Источник данных».
+
+    Подробная документация:
+    https://yandex.ru/support/marketplace/assortment/files/yml.html
+-->
+<yml_catalog date="2026-05-22T00:00:00+03:00">
+    <shop>
+        <name>Название вашего магазина</name>
+        <company>ИП / ООО Название вашего магазина</company>
+        <url>https://example.ru/</url>
+        <email>info@example.ru</email>
+        <phone>+7-949-000-00-00</phone>
+
+        <currencies>
+            <currency id="RUR" rate="1"/>
+        </currencies>
+
+        <categories>
+            <category id="1">Квадрокоптеры</category>
+            <category id="2" parentId="1">Квадрокоптеры DJI</category>
+            <category id="3" parentId="2">DJI Mavic</category>
+            <category id="4" parentId="2">DJI Mini</category>
+            <category id="5" parentId="2">DJI Air</category>
+            <category id="6" parentId="2">DJI FPV / Avata</category>
+            <category id="7">Запчасти для квадрокоптеров</category>
+            <category id="8" parentId="7">Аккумуляторы</category>
+            <category id="9" parentId="7">Моторы</category>
+            <category id="10" parentId="7">Пропеллеры</category>
+            <category id="11" parentId="7">Камеры и подвесы</category>
+            <category id="12">Экшн-камеры</category>
+            <category id="13" parentId="12">GoPro</category>
+            <category id="14" parentId="12">DJI Osmo Action</category>
+            <category id="15" parentId="12">Insta360</category>
+            <category id="16">Аксессуары</category>
+        </categories>
+
+        <delivery-options>
+            <option cost="0" days="0" order-before="18"/>
+        </delivery-options>
+
+        <offers>
+            <!--
+                Каждый товар = <offer>. Скопируйте блок ниже и заполните своими данными.
+                Атрибут available="true" — товар в наличии. id — уникальный артикул.
+            -->
+
+            <offer id="mavic-3-pro" available="true">
+                <url>https://example.ru/catalog/kvadrokoptery-dji.html#mavic-3-pro</url>
+                <price>189000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>3</categoryId>
+                <picture>https://example.ru/assets/img/products/mavic-3-pro.jpg</picture>
+                <pickup>true</pickup>
+                <delivery>true</delivery>
+                <store>true</store>
+                <name>DJI Mavic 3 Pro</name>
+                <vendor>DJI</vendor>
+                <vendorCode>CP.MA.00000656.01</vendorCode>
+                <description><![CDATA[
+                    Квадрокоптер DJI Mavic 3 Pro с тройной камерой Hasselblad и съёмкой 5.1K.
+                    Время полёта до 43 минут, дальность управления до 15 км.
+                    Купить с доставкой в Донецке и Луганске.
+                ]]></description>
+                <param name="Вес">958 г</param>
+                <param name="Время полёта">43 мин</param>
+                <param name="Разрешение видео">5.1K</param>
+                <country_of_origin>Китай</country_of_origin>
+                <barcode>6941565951588</barcode>
+            </offer>
+
+            <offer id="mini-4-pro" available="true">
+                <url>https://example.ru/catalog/kvadrokoptery-dji.html#mini-4-pro</url>
+                <price>89000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>4</categoryId>
+                <picture>https://example.ru/assets/img/products/mini-4-pro.jpg</picture>
+                <name>DJI Mini 4 Pro</name>
+                <vendor>DJI</vendor>
+                <description><![CDATA[
+                    Компактный квадрокоптер DJI Mini 4 Pro весом до 249 г.
+                    Съёмка 4K HDR, всенаправленное обнаружение препятствий.
+                ]]></description>
+                <param name="Вес">&lt; 249 г</param>
+                <param name="Время полёта">34 мин</param>
+                <country_of_origin>Китай</country_of_origin>
+            </offer>
+
+            <offer id="gopro-hero-13" available="true">
+                <url>https://example.ru/catalog/ekshn-kamery.html#gopro-hero-13</url>
+                <price>54000</price>
+                <currencyId>RUR</currencyId>
+                <categoryId>13</categoryId>
+                <picture>https://example.ru/assets/img/products/gopro-hero-13.jpg</picture>
+                <name>GoPro Hero 13 Black</name>
+                <vendor>GoPro</vendor>
+                <description><![CDATA[
+                    Экшн-камера GoPro Hero 13 Black с поддержкой сменных HB-Series объективов.
+                    Видео 5.3K60, стабилизация HyperSmooth, водонепроницаемость 10 м.
+                ]]></description>
+                <country_of_origin>США</country_of_origin>
+            </offer>
+
+            <!--
+                Шаблон для добавления своих товаров — скопируйте и заполните:
+
+                <offer id="UNIQUE_ID" available="true">
+                    <url>https://example.ru/catalog/.../</url>
+                    <price>0</price>
+                    <currencyId>RUR</currencyId>
+                    <categoryId>3</categoryId>
+                    <picture>https://example.ru/assets/img/products/...jpg</picture>
+                    <name>НАЗВАНИЕ</name>
+                    <vendor>БРЕНД</vendor>
+                    <description><![CDATA[ОПИСАНИЕ]]></description>
+                    <country_of_origin>Китай</country_of_origin>
+                </offer>
+            -->
+
+        </offers>
+    </shop>
+</yml_catalog>

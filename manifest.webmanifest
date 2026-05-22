@@ -1,0 +1,18 @@
+{
+    "name": "Название вашего магазина — квадрокоптеры и запчасти DJI",
+    "short_name": "Магазин дронов",
+    "description": "Интернет-магазин квадрокоптеров и запчастей DJI в Донецке и Луганске.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0d12",
+    "theme_color": "#ff6a1a",
+    "lang": "ru-RU",
+    "icons": [
+        {
+            "src": "/assets/img/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ]
+}
